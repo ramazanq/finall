@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    
+    <title>Paint</title>
+    <!--fonts -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href=img/favicon//apple-icon-60x60.png ">
+        <link rel=" apple-touch-icon " sizes=" 72x72 " href=" img/favicon//apple-icon-72x72.png ">
+        <link rel=" apple-touch-icon " sizes=" 76x76 " href=" img/favicon//apple-icon-76x76.png ">
+        <link rel=" apple-touch-icon " sizes=" 114x114 " href=" img/favicon//apple-icon-114x114.png ">
+        <link rel=" apple-touch-icon " sizes=" 120x120 " href=" img/favicon//apple-icon-120x120.png ">
+        <link rel=" apple-touch-icon " sizes=" 144x144 " href=" img/favicon//apple-icon-144x144.png ">
+        <link rel=" apple-touch-icon " sizes=" 152x152 " href=" img/favicon//apple-icon-152x152.png ">
+        <link rel=" apple-touch-icon " sizes=" 180x180 " href=" img/favicon//apple-icon-180x180.png ">
+        <link rel=" icon " type=" image/png " sizes=" 192x192 " href=" img/favicon//android-icon-192x192.png ">
+        <link rel=" icon " type=" image/png " sizes=" 32x32 " href=" img/favicon//favicon-32x32.png ">
+        <link rel=" icon " type=" image/png " sizes=" 96x96 " href=" img/favicon//favicon-96x96.png ">
+        <link rel=" icon " type=" image/png " sizes=" 16x16 " href=" img/favicon//favicon-16x16.png ">
+        <link rel=" manifest " href=" /manifest.json ">
+        <meta name=" msapplication-TileColor " content=" #ffffff ">
+        <meta name=" msapplication-TileImage " content=" /ms-icon-144x144.png ">
+        <meta name=" theme-color " content=" #ffffff ">
+        <!-- js icons -->
+        <script src=" https://kit.fontawesome.com/0fee7a56be.js " crossorigin=" anonymous "></script>
+
+</head>
+    <link rel="stylesheet" href="paint.css">
+<body style="margin: 0;">
+    <nav>
+        <div class="logo ">
+            <img style="width: 50px; height: 50px; " src="img/logo.png " alt="logo ">
+        </div>
+        <div class="search ">
+            <input type="text " name="search " class="search-txt " placeholder="Search ">
+            <i class="fas fa-search "></i>
+        </div>
+        <ul class="nav-links ">
+            <li><a href="index.html ">Home</a></li>
+            <li><a href="login_page.html ">log in</a></li>
+            <li><a href="help_videopage.html ">Help</a></li>
+        </ul>
+        <div class="burger ">
+            <div class="items1 "></div>
+            <div class="items2 "></div>
+            <div class="items3 "></div>
+        </div>
+    </nav>
+
+    <div class="menu">
+        <div class="color_black" onclick="color_black()"></div>
+        <div class="color_yellow" onclick="color_yellow()"></div>
+        <div class="color_green" onclick="color_green()"></div>
+        <div class="color_red" onclick="color_red()"></div>
+        <div class="color_blue" onclick="color_blue()"></div>
+        <div class="color_orange" onclick="color_orange()"></div>
+        <div class="color_white" onclick="color_white()"></div>
+        <div id="background_color" onclick="background_color()">Change color</div>
+        <h3>Keyboards:c - clear, s - save, r - paint to draw</h3>
+    </div>
+    <canvas id="canvas">Твой браузер не поддерживает canvas.</canvas>
+
+</body>
+<script src="script/jquery-3.6.0.min.js"></script>
+<script src="paint.js"></script>
+</html>

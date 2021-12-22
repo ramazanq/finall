@@ -1,0 +1,216 @@
+    *{
+          margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Nunito', sans-serif;
+    }
+    .menu h3{
+        margin: 20px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+        background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    }
+    
+    .nav-links a {
+        font-weight: bolder;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-decoration: none;
+    }
+    
+    .nav-links {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+    
+    .burger {
+        display: none;
+        cursor: pointer;
+    }
+    
+    .logo {
+        position: relative;
+        top: 3px;
+    }
+    
+    .burger div {
+        width: 30px;
+        height: 3px;
+        background-color: rgb(90, 57, 57);
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .nav-links {
+            width: 50%;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        body {
+            overflow-x: hidden;
+        }
+        .nav-links {
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top:8.3vh;
+            background: rgb(252, 234, 133);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in;
+        }
+        .nav-links li {
+            opacity: 1;
+        }
+        .burger {
+            display: block;
+        }
+    }
+    
+    .nav-active {
+        transform: translateX(0%);
+    }
+    
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 2;
+            transform: translateX(0px);
+        }
+    }
+    
+    .toggle .items1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .toggle .items2 {
+        opacity: 0;
+    }
+    
+    .toggle .items3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    .search {
+        height: 30px;
+        background: rgba(25, 115, 189, 0.603);
+        border-radius: 40px;
+        padding: 10px;
+    }
+    
+     .fas {
+        position: relative;
+        top: -4px;
+        left: -2px;
+        width: 10px;
+        height: 40px;
+        border-radius: 50%;
+        align-items: center;
+        transition: 0.4s;
+    }
+    
+    .search-txt {
+        position: relative;
+        top: -12px;
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0;
+        color: white;
+        font-size: 20px;
+        line-height: 40px;
+        width: 240px;
+    }
+
+    
+    
+   
+   
+   html{
+            overflow: hidden;
+        }
+        h3{
+            position: inherit;
+            left: 50%;
+            top: -30%;
+        }
+        .menu{
+            position: absolute;
+            background-color: gray;
+            height: 40px;
+            width: 100%;
+        }
+        .color_black{
+            position: inherit;
+            width: 2%;
+            height: 100%;
+            background-color: black;
+        }
+        .color_yellow{
+            position: inherit;
+            width: 2%;
+            height: 100%;
+            left:2%;
+            background-color: yellow;
+        }
+        .color_green{
+            position: inherit;
+            width: 2%;
+            height: 100%;
+            left:4%;
+            background-color: green;
+        }
+        .color_red{
+            position: inherit;
+            width: 2%;
+            height: 100%;
+            left:6%;
+            background-color: red;
+        }
+        .color_blue{
+            position: inherit;
+            width: 2%;
+            height: 100%;
+            left:8%;
+            background-color: blue;
+        }
+        .color_orange{
+            position: inherit;
+            width: 2%;
+            height: 100%;
+            left:10%;
+            background-color: orange;
+        }
+        .color_white{
+            position: inherit;
+            width: 2%;
+            height: 100%;
+            left:12%;
+            background-color: white;
+        }
+        #background_color{
+            position: inherit;
+            left:16%;
+            padding-top: 0.5em;
+            text-align: center;
+            width:8%;
+            height: 80%;
+            background-color: #C0C0C0;
+        }
+        .background_color:hover{background-color: #545454;}
